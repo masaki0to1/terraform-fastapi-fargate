@@ -1,7 +1,12 @@
 variable "name" {
   type        = string
   description = "Enter the Name of ECR repository."
-  default     = "testName"
+}
+
+variable "tag_mutability" {
+  type = string
+  description = "Specify the mutability of tags."
+  default = "MUTABLE"
 }
 
 variable "holding_count" {
