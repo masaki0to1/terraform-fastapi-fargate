@@ -1,11 +1,11 @@
 variable "name" {
   type        = string
   description = "Enter the Name of ECR repository."
-  default = "testName"
+  default     = "testName"
 }
 
 variable "holding_count" {
-    type = number
-    description = "Enter the Number of Images to hold."
-    default = 10
+  type        = number
+  description = "Enter the Number of Images to hold."
+  default     = 10
 }
