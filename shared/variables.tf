@@ -1,17 +1,16 @@
 variable "aws_region" {
-  type = string
+  type    = string
   default = "ap-northeast-1"
 }
 
 variable "tag_env" {
   type        = string
-  default     = "dev"
   description = "Specify the environment for the resources."
 }
 
 variable "tag_system" {
   type        = string
-  default     = "fastapi"
+  default     = "ezapp"
   description = "Enter the name of the system."
 }
 

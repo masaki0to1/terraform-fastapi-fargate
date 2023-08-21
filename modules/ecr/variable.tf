@@ -3,10 +3,16 @@ variable "name" {
   description = "Enter the Name of ECR repository."
 }
 
-variable "tag_mutability" {
+variable "prefix" {
   type = string
+  description = "Enter the prefix of this system."
+  default = "ezapp"
+}
+
+variable "tag_mutability" {
+  type        = string
   description = "Specify the mutability of tags."
-  default = "MUTABLE"
+  default     = "MUTABLE"
 }
 
 variable "holding_count" {

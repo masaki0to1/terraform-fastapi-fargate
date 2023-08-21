@@ -1,9 +1,9 @@
 resource "aws_ecr_repository" "this" {
-  name                 = var.name
+  name                 = "${var.prefix}-${var.name}"
   image_tag_mutability = var.tag_mutability
 
   tags = {
-    Name = var.name
+    Name = "${var.prefix}-${var.name}"
   }
 }
 
